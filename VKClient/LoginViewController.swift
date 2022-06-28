@@ -18,14 +18,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLable: UILabel!
     
     
+    let toTabBarController = "toTabBarController"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //реализация скрытия клавиатуры
+//реализация скрытия клавиатуры
         let tapRecognaizer = UITapGestureRecognizer(target: self, action: #selector(onTap))
         self.view.addGestureRecognizer(tapRecognaizer)
 
+        
+        
         
     }
 
@@ -34,15 +38,38 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
    
-    
-    @IBAction func LoginButtonPressed(_ sender: UIButton) {
-        // логика авторизации
+    @IBAction func pressLoginButton(_ sender: Any) {
         
-        // Получаем текст логина
-        let login = loginInput.text
-        // Получаем текст - пароль
-        let password = passwordInput.text
+        
+        }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+       //проверяем данные
+        let checkResult = checkUserData()
+        if !checkResult { showLoginError()}
+        return checkResult
     }
     
+    
+    func checkUserData() -> Bool {
+        guard let login = loginInput.text,
+              let password = passwordInput.text else { return false }
+                
+        if login == "admin" && password == "admin" {
+            return true
+        } else { return false }
+    }
+    
+    func showLoginError() {
+        
+        let alter = UIAlertController(title: "Error",
+                                      message: "Неверные логин и/или пароль",
+                                      preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alter.addAction(action)
+        
+        present(alter, animated: true, completion: nil)
+    }
 }
 
