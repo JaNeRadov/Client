@@ -28,13 +28,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome to Free VK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-iB-6r1">
                                                 <rect key="frame" x="16" y="214" width="382" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNG-2e-Qqn">
                                                 <rect key="frame" x="16" y="264" width="382" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBI-ok-0Rr">
@@ -45,7 +45,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4U-pf-VlI">
                                                 <rect key="frame" x="16" y="378" width="382" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8L-w7-GHh">
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="B8L-w7-GHh" firstAttribute="top" secondItem="R4U-pf-VlI" secondAttribute="bottom" constant="25" id="1zk-It-Frd"/>
                                             <constraint firstItem="R4U-pf-VlI" firstAttribute="top" secondItem="xBI-ok-0Rr" secondAttribute="bottom" constant="25" id="24X-aG-n0O"/>
@@ -106,7 +106,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pWY-Rm-lBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="98U-hP-SMr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWY-Rm-lBW" secondAttribute="bottom" id="9Jo-dE-xyN"/>
@@ -132,7 +132,7 @@
         <!--Profile-->
         <scene sceneID="azL-2V-p94">
             <objects>
-                <viewController id="K7f-IU-Nws" sceneMemberID="viewController">
+                <viewController id="K7f-IU-Nws" customClass="ProfileViewController" customModule="VKClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4dw-Pf-V0b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,30 +160,85 @@
         <!--My Frieands-->
         <scene sceneID="wPa-2H-txF">
             <objects>
-                <viewController id="9eB-Jw-Mnp" sceneMemberID="viewController">
+                <viewController id="9eB-Jw-Mnp" customClass="MyFreandsViewController" customModule="VKClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iRk-PE-Ysi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-mh-ea0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="665"/>
+                                <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="tintColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Rpc-bs-dl4">
+                                <rect key="frame" x="0.0" y="87" width="414" height="60"/>
+                                <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ryh-SS-2mH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="tintColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ryh-SS-2mH" firstAttribute="trailing" secondItem="Rpc-bs-dl4" secondAttribute="trailing" id="1PO-po-asW"/>
+                            <constraint firstItem="hmc-mh-ea0" firstAttribute="top" secondItem="ryh-SS-2mH" secondAttribute="top" constant="60" id="8g3-bj-uTx"/>
+                            <constraint firstItem="Rpc-bs-dl4" firstAttribute="leading" secondItem="ryh-SS-2mH" secondAttribute="leading" id="B54-UZ-XSQ"/>
                             <constraint firstItem="ryh-SS-2mH" firstAttribute="bottom" secondItem="hmc-mh-ea0" secondAttribute="bottom" id="WoU-DX-Pu3"/>
-                            <constraint firstItem="hmc-mh-ea0" firstAttribute="top" secondItem="ryh-SS-2mH" secondAttribute="top" id="Wtj-CL-uCe"/>
+                            <constraint firstItem="hmc-mh-ea0" firstAttribute="top" secondItem="Rpc-bs-dl4" secondAttribute="bottom" constant="1" id="kMq-rz-TcW"/>
                             <constraint firstItem="ryh-SS-2mH" firstAttribute="trailing" secondItem="hmc-mh-ea0" secondAttribute="trailing" id="rCe-73-OAB"/>
                             <constraint firstItem="hmc-mh-ea0" firstAttribute="leading" secondItem="ryh-SS-2mH" secondAttribute="leading" id="wMh-FV-GxP"/>
+                            <constraint firstItem="ryh-SS-2mH" firstAttribute="top" secondItem="Rpc-bs-dl4" secondAttribute="top" constant="1" id="xBP-hb-bST"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Frieands" id="jfZ-9K-J46"/>
+                    <connections>
+                        <outlet property="searchFreandsBar" destination="Rpc-bs-dl4" id="tVZ-8f-AJG"/>
+                        <outlet property="tableView" destination="hmc-mh-ea0" id="uNr-7t-ZZW"/>
+                        <segue destination="Jt6-LJ-KDh" kind="show" id="A4P-Mj-rX0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYj-XB-eFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="2340"/>
+            <point key="canvasLocation" x="937.68115942028987" y="2339.7321428571427"/>
+        </scene>
+        <!--Galery View Controller-->
+        <scene sceneID="OXi-lh-UzW">
+            <objects>
+                <viewController id="Jt6-LJ-KDh" customClass="GaleryViewController" customModule="VKClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sh2-8l-QJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YJt-5R-kFZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.1022366141" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="si8-r3-r8a">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fYR-AC-3dC"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="tintColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YJt-5R-kFZ" firstAttribute="top" secondItem="fYR-AC-3dC" secondAttribute="top" id="9LO-gW-J83"/>
+                            <constraint firstItem="YJt-5R-kFZ" firstAttribute="leading" secondItem="fYR-AC-3dC" secondAttribute="leading" id="QnU-Cu-7ct"/>
+                            <constraint firstItem="fYR-AC-3dC" firstAttribute="trailing" secondItem="YJt-5R-kFZ" secondAttribute="trailing" id="ZHB-iT-DLj"/>
+                            <constraint firstItem="fYR-AC-3dC" firstAttribute="bottom" secondItem="YJt-5R-kFZ" secondAttribute="bottom" id="oRD-zf-WnQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S3O-1a-x60"/>
+                    <connections>
+                        <outlet property="collectionView" destination="YJt-5R-kFZ" id="hLb-5Y-nD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWl-vN-8vp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="3141"/>
         </scene>
         <!--My Groups-->
         <scene sceneID="RzA-Hq-H4G">
