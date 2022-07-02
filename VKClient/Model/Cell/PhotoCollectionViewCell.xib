@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="AltVK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-5L-hz9">
+                        <rect key="frame" x="57" y="44" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lSe-5L-hz9" secondAttribute="height" multiplier="1:1" id="4VL-m8-KAv"/>
+                            <constraint firstAttribute="height" constant="100" id="7PB-hh-gpW"/>
+                            <constraint firstAttribute="width" constant="100" id="d9L-zB-kk0"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5m-ct-1ep" customClass="LikeControlView" customModule="AltVK" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="144" width="214" height="37"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lSe-5L-hz9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OiX-pj-89S"/>
+                <constraint firstItem="K5m-ct-1ep" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="XMY-Wf-3Ey"/>
+                <constraint firstItem="K5m-ct-1ep" firstAttribute="top" secondItem="lSe-5L-hz9" secondAttribute="bottom" id="fqk-80-Kgw"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="K5m-ct-1ep" secondAttribute="trailing" id="gw2-zk-vs0"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="K5m-ct-1ep" secondAttribute="bottom" constant="6" id="snk-eD-jFF"/>
+                <constraint firstItem="K5m-ct-1ep" firstAttribute="top" secondItem="lSe-5L-hz9" secondAttribute="bottom" id="vrx-SF-Ghe"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="lSe-5L-hz9" secondAttribute="top" id="ypA-zX-jwG"/>
+            </constraints>
+            <size key="customSize" width="214" height="187"/>
+            <connections>
+                <outlet property="likeControllView" destination="K5m-ct-1ep" id="te0-hB-RST"/>
+                <outlet property="photoImageView" destination="lSe-5L-hz9" id="dqe-jU-Sp7"/>
+            </connections>
+            <point key="canvasLocation" x="-110.14492753623189" y="65.959821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
