@@ -99,7 +99,7 @@ extension MyGroupViewController: UITableViewDelegate {
     }
 }
 extension MyGroupViewController: UISearchBarDelegate {
-    func searcBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    private func searcBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             myGroups = sourceMyGroups
         } else {
@@ -108,3 +108,4 @@ extension MyGroupViewController: UISearchBarDelegate {
         tableView.reloadData()
     }
 }
+
