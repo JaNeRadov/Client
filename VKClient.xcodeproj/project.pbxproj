@@ -11,7 +11,6 @@
 		3FD8DE91286B391C00D03EC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DE90286B391C00D03EC2 /* SceneDelegate.swift */; };
 		3FD8DE93286B391C00D03EC2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DE92286B391C00D03EC2 /* LoginViewController.swift */; };
 		3FD8DE96286B391C00D03EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DE94286B391C00D03EC2 /* Main.storyboard */; };
-		3FD8DE98286B392000D03EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DE97286B392000D03EC2 /* Assets.xcassets */; };
 		3FD8DE9B286B392000D03EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DE99286B392000D03EC2 /* LaunchScreen.storyboard */; };
 		3FD8DEB3286B92FA00D03EC2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEB2286B92FA00D03EC2 /* Profile.swift */; };
 		3FD8DEB6286CCA5B00D03EC2 /* ViewController+dataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEB5286CCA5B00D03EC2 /* ViewController+dataSource.swift */; };
@@ -26,6 +25,11 @@
 		3FD8DED4286CDBBD00D03EC2 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DED2286CDBBD00D03EC2 /* PhotoCollectionViewCell.xib */; };
 		3FD8DED5286CDBBD00D03EC2 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DED3286CDBBD00D03EC2 /* PhotoCollectionViewCell.swift */; };
 		3FD8DED7286CDC3700D03EC2 /* GaleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DED6286CDC3700D03EC2 /* GaleryViewController.swift */; };
+		3FD8DEDB2870CC3500D03EC2 /* myPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEDA2870CC3500D03EC2 /* myPhoto.swift */; };
+		3FD8DEDE2870CCBF00D03EC2 /* LikeControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DEDD2870CCBF00D03EC2 /* LikeControlView.xib */; };
+		3FD8DEE02870CCD500D03EC2 /* LikeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEDF2870CCD500D03EC2 /* LikeControlView.swift */; };
+		3FD8DEE22870D0A100D03EC2 /* AllGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */; };
+		3FD8DEE42870D45000D03EC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DEE32870D45000D03EC2 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +38,6 @@
 		3FD8DE90286B391C00D03EC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3FD8DE92286B391C00D03EC2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD8DE95286B391C00D03EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3FD8DE97286B392000D03EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD8DE9A286B392000D03EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD8DE9C286B392000D03EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD8DEB2286B92FA00D03EC2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -50,6 +53,11 @@
 		3FD8DED2286CDBBD00D03EC2 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		3FD8DED3286CDBBD00D03EC2 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FD8DED6286CDC3700D03EC2 /* GaleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryViewController.swift; sourceTree = "<group>"; };
+		3FD8DEDA2870CC3500D03EC2 /* myPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPhoto.swift; sourceTree = "<group>"; };
+		3FD8DEDD2870CCBF00D03EC2 /* LikeControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikeControlView.xib; sourceTree = "<group>"; };
+		3FD8DEDF2870CCD500D03EC2 /* LikeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControlView.swift; sourceTree = "<group>"; };
+		3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewController.swift; sourceTree = "<group>"; };
+		3FD8DEE32870D45000D03EC2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +97,7 @@
 				3FD8DEB4286CCA0500D03EC2 /* extentions */,
 				3FD8DE8E286B391C00D03EC2 /* AppDelegate.swift */,
 				3FD8DE94286B391C00D03EC2 /* Main.storyboard */,
-				3FD8DE97286B392000D03EC2 /* Assets.xcassets */,
+				3FD8DEE32870D45000D03EC2 /* Media.xcassets */,
 				3FD8DE99286B392000D03EC2 /* LaunchScreen.storyboard */,
 				3FD8DE9C286B392000D03EC2 /* Info.plist */,
 			);
@@ -102,6 +110,7 @@
 				3FD8DE92286B391C00D03EC2 /* LoginViewController.swift */,
 				3FD8DEB7286CCAFA00D03EC2 /* ProfileViewController.swift */,
 				3FD8DEB9286CCBE600D03EC2 /* MyFreandsViewController.swift */,
+				3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */,
 				3FD8DED6286CDC3700D03EC2 /* GaleryViewController.swift */,
 			);
 			path = Controllers;
@@ -114,6 +123,8 @@
 				3FD8DEC8286CD34500D03EC2 /* Frieands.swift */,
 				3FD8DEC5286CCEA100D03EC2 /* Group.swift */,
 				3FD8DECC286CD47E00D03EC2 /* Storage.swift */,
+				3FD8DEDA2870CC3500D03EC2 /* myPhoto.swift */,
+				3FD8DEDC2870CC8200D03EC2 /* Custom View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +147,15 @@
 				3FD8DECE286CD65C00D03EC2 /* ViewController+Deligate.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		3FD8DEDC2870CC8200D03EC2 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				3FD8DEDD2870CCBF00D03EC2 /* LikeControlView.xib */,
+				3FD8DEDF2870CCD500D03EC2 /* LikeControlView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +217,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD8DE9B286B392000D03EC2 /* LaunchScreen.storyboard in Resources */,
+				3FD8DEDE2870CCBF00D03EC2 /* LikeControlView.xib in Resources */,
+				3FD8DEE42870D45000D03EC2 /* Media.xcassets in Resources */,
 				3FD8DED4286CDBBD00D03EC2 /* PhotoCollectionViewCell.xib in Resources */,
-				3FD8DE98286B392000D03EC2 /* Assets.xcassets in Resources */,
 				3FD8DEC3286CCE6B00D03EC2 /* CustomTableViewCell.xib in Resources */,
 				3FD8DE96286B391C00D03EC2 /* Main.storyboard in Resources */,
 			);
@@ -211,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD8DEE22870D0A100D03EC2 /* AllGroupViewController.swift in Sources */,
 				3FD8DEC6286CCEA100D03EC2 /* Group.swift in Sources */,
+				3FD8DEE02870CCD500D03EC2 /* LikeControlView.swift in Sources */,
 				3FD8DECF286CD65C00D03EC2 /* ViewController+Deligate.swift in Sources */,
 				3FD8DECD286CD47E00D03EC2 /* Storage.swift in Sources */,
 				3FD8DEC9286CD34500D03EC2 /* Frieands.swift in Sources */,
@@ -221,6 +244,7 @@
 				3FD8DEBA286CCBE600D03EC2 /* MyFreandsViewController.swift in Sources */,
 				3FD8DEB6286CCA5B00D03EC2 /* ViewController+dataSource.swift in Sources */,
 				3FD8DEB3286B92FA00D03EC2 /* Profile.swift in Sources */,
+				3FD8DEDB2870CC3500D03EC2 /* myPhoto.swift in Sources */,
 				3FD8DED7286CDC3700D03EC2 /* GaleryViewController.swift in Sources */,
 				3FD8DE8F286B391C00D03EC2 /* AppDelegate.swift in Sources */,
 				3FD8DED5286CDBBD00D03EC2 /* PhotoCollectionViewCell.swift in Sources */,

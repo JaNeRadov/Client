@@ -9,6 +9,6 @@ struct Friend {
     var name: String
     var age: String?
     var avatar: String?
-//    var isLiked = false
-    var photoAlbom = [String]()
+    var isLiked = false
+    var photoAlbom = [MyPhoto]()
 }

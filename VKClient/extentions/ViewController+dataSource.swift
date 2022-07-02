@@ -30,20 +30,37 @@ extension GaleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photoCollectionViewCellReuseIdentifire, for: indexPath) as! PhotoCollectionViewCell
         let localPhotoAlbomIndex = photoAlbomIndex
-//        let currentPhotoAlbom = Storage.shared.friends[localPhotoAlbomIndex].photoAlbum
-//        let image = UIImage(named:currentPhotoAlbom[indexPath.item].url)
+        let currentPhotoAlbom = Storage.shared.friends[localPhotoAlbomIndex].photoAlbom
+        let image = UIImage(named:currentPhotoAlbom[indexPath.item].url)
+        
+        if indexPath.item % 2 == 0 {
+            cell.configure(image: image,
+                           isliked: currentPhotoAlbom[indexPath.item].isLiked,
+                           likeCounter: currentPhotoAlbom[indexPath.item].likeCounter) { isLikePress, currentCounter in
+                Storage.shared.friends[localPhotoAlbomIndex].photoAlbom[indexPath.item].isLiked = isLikePress
+                Storage.shared.friends[localPhotoAlbomIndex].photoAlbom[indexPath.item].likeCounter = currentCounter
+            }
+        }
        
         
-        if indexPath.item % 2 == 0{
-            cell.configure(image: image, isliked: currentPhotoAlbom[indexPath.item].isLiked, likeCounter: currentPhotoAlbom[indexPath.item].likeCounter, onLikeClosure: { isLikePressed, currentCounter in
-                print("counter \(currentCounter)")
-                print((isLikePressed ? "true" : "false" ))
-                Storage.shared.friends[localPhotoAlbomIndex].photoAlbum[indexPath.item].isLiked = isLikePressed
-                Storage.shared.friends[localPhotoAlbomIndex].photoAlbum[indexPath.item].likeCounter = currentCounter
-                
-                
-            })
-        }
+       
         return cell
     }
+}
+
+extension AllGroupViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return allGroups.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: customTableViewCellReuse, for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
+        let group = allGroups[indexPath.row]
+        cell.configure(image: UIImage(named: group.avatar), name: group.name, description: group.description)
+        cell.configure(self.allGroups[indexPath.row])
+        return cell
+    }
+    
+    
 }

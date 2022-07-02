@@ -30,11 +30,10 @@ class PhotoCollectionViewCell: UICollectionViewCell {
    
 }
  
-//extension PhotoCollectionViewCell: LikeControlProtocol {
-//    func pressLike(likeState: Bool, counter: Int) {
-//
-//        self.onLikeClosure?(likeState, counter)
-//    }
+extension PhotoCollectionViewCell: LikeControlProtocol {
+    func pressedLike(likeState: Bool, counter: Int) {
+        self.onLikeClosure?(likeState, counter)
+    }
 //
 //
 //

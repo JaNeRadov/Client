@@ -143,7 +143,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kuT-8X-hF2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nhv-kY-sX3" firstAttribute="top" secondItem="kuT-8X-hF2" secondAttribute="top" id="C1k-Bu-nfu"/>
                             <constraint firstItem="kuT-8X-hF2" firstAttribute="bottom" secondItem="Nhv-kY-sX3" secondAttribute="bottom" id="FWu-QX-uop"/>
@@ -178,7 +178,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ryh-SS-2mH"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
-                        <color key="tintColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ryh-SS-2mH" firstAttribute="trailing" secondItem="Rpc-bs-dl4" secondAttribute="trailing" id="1PO-po-asW"/>
                             <constraint firstItem="hmc-mh-ea0" firstAttribute="top" secondItem="ryh-SS-2mH" secondAttribute="top" constant="60" id="8g3-bj-uTx"/>
@@ -200,6 +200,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYj-XB-eFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="2339.7321428571427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KzK-hx-5Jf">
+            <objects>
+                <viewController id="hka-XN-a6n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QyA-NU-vjy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zFf-qv-Ixn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToT-qU-0ZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="3141"/>
         </scene>
         <!--Galery View Controller-->
         <scene sceneID="OXi-lh-UzW">
@@ -249,24 +264,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yWQ-3y-Ptx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="665"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3uD-zV-ZsB">
+                                <rect key="frame" x="0.0" y="89" width="414" height="58"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ayZ-5l-aay"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yWQ-3y-Ptx" firstAttribute="top" secondItem="ayZ-5l-aay" secondAttribute="top" id="EjI-44-d3Y"/>
+                            <constraint firstItem="3uD-zV-ZsB" firstAttribute="top" secondItem="ayZ-5l-aay" secondAttribute="top" constant="1" id="Ds6-Vq-bec"/>
+                            <constraint firstItem="yWQ-3y-Ptx" firstAttribute="top" secondItem="ayZ-5l-aay" secondAttribute="top" constant="60" id="EjI-44-d3Y"/>
+                            <constraint firstItem="yWQ-3y-Ptx" firstAttribute="top" secondItem="3uD-zV-ZsB" secondAttribute="bottom" constant="1" id="L7s-vT-w9d"/>
                             <constraint firstItem="yWQ-3y-Ptx" firstAttribute="leading" secondItem="ayZ-5l-aay" secondAttribute="leading" id="T2G-O2-Fwu"/>
                             <constraint firstItem="ayZ-5l-aay" firstAttribute="trailing" secondItem="yWQ-3y-Ptx" secondAttribute="trailing" id="Tcn-wh-UWx"/>
                             <constraint firstItem="ayZ-5l-aay" firstAttribute="bottom" secondItem="yWQ-3y-Ptx" secondAttribute="bottom" id="b8P-FR-ZOj"/>
+                            <constraint firstItem="3uD-zV-ZsB" firstAttribute="leading" secondItem="ayZ-5l-aay" secondAttribute="leading" id="hZ8-42-RcP"/>
+                            <constraint firstItem="ayZ-5l-aay" firstAttribute="trailing" secondItem="3uD-zV-ZsB" secondAttribute="trailing" id="jeT-fd-Gwz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Groups" id="lsU-I2-GFC"/>
+                    <navigationItem key="navigationItem" title="My Groups" id="lsU-I2-GFC">
+                        <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" id="CDw-AB-puU">
+                            <connections>
+                                <segue destination="PvE-TU-aqI" kind="show" id="H6u-eD-t6h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIJ-u5-1bx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2119" y="2340"/>
+        </scene>
+        <!--All Group View Controller-->
+        <scene sceneID="2be-2S-eLJ">
+            <objects>
+                <viewController id="PvE-TU-aqI" customClass="AllGroupViewController" customModule="VKClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFa-VL-ZFk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2U-ZQ-r3v">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i6M-fV-Atc">
+                                <rect key="frame" x="0.0" y="138" width="414" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PHO-4l-YZs"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PHO-4l-YZs" firstAttribute="bottom" secondItem="i6M-fV-Atc" secondAttribute="bottom" id="9Cz-RL-6x4"/>
+                            <constraint firstItem="i6M-fV-Atc" firstAttribute="top" secondItem="PHO-4l-YZs" secondAttribute="top" constant="50" id="UKK-t8-SkB"/>
+                            <constraint firstItem="i6M-fV-Atc" firstAttribute="leading" secondItem="PHO-4l-YZs" secondAttribute="leading" id="qMW-F6-gs6"/>
+                            <constraint firstItem="PHO-4l-YZs" firstAttribute="trailing" secondItem="i6M-fV-Atc" secondAttribute="trailing" id="qRV-xi-yPI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Ie-6t-LMx"/>
+                    <connections>
+                        <outlet property="groupTableView" destination="i6M-fV-Atc" id="H8Z-Es-qd1"/>
+                        <outlet property="searchAllGroupBar" destination="Y2U-ZQ-r3v" id="EyG-M6-9Ic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYa-a6-AgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118.840579710145" y="3140.625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dcF-rC-EiI">
@@ -317,6 +384,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T5p-qp-KOB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -352,8 +423,12 @@
         <image name="logovk" width="176" height="176"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
