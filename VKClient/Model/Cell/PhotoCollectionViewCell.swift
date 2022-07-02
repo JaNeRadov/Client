@@ -10,22 +10,22 @@ import UIKit
 class PhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var photoImageView: UIImageView!
-//    @IBOutlet weak var likeControllView: LikeControlView!
+    @IBOutlet weak var likeControllView: LikeControlView!
     var onLikeClosure: ((Bool, Int) -> Void)?
     override func prepareForReuse() {
         super.prepareForReuse()
         photoImageView.image = nil
-//        likeControllView.configure(isLiked: false, counter: 0)
-//        onLikeClosure = nil
+        likeControllView.configure(isLiked: false, counter: 0)
+        onLikeClosure = nil
     }
     
     
     func configure(image: UIImage?, isliked: Bool, likeCounter: Int, onLikeClosure: @escaping (Bool, Int) -> Void) {
         photoImageView.image = image
         photoImageView.layer.cornerRadius = 50
-//        likeControllView.configure(isLiked: isliked, counter: likeCounter)
-//        likeControllView.delegate = self
-//        self.onLikeClosure = onLikeClosure
+        likeControllView.configure(isLiked: isliked, counter: likeCounter)
+        likeControllView.deligate = self
+        self.onLikeClosure = onLikeClosure
     }
    
 }
