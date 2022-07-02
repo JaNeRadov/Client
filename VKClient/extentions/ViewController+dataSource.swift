@@ -24,7 +24,7 @@ extension MyFreandsViewController: UITableViewDataSource {
 
 extension GaleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-//        return Storage.shared.friends[photoAlbomIndex].photoAlbum.count
+        return Storage.shared.friends[photoAlbomIndex].photoAlbom.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,9 +41,7 @@ extension GaleryViewController: UICollectionViewDataSource {
                 Storage.shared.friends[localPhotoAlbomIndex].photoAlbom[indexPath.item].likeCounter = currentCounter
             }
         }
-       
         
-       
         return cell
     }
 }
@@ -61,6 +59,23 @@ extension AllGroupViewController: UITableViewDataSource {
         cell.configure(self.allGroups[indexPath.row])
         return cell
     }
+}
+
+extension MyGroupViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: customTableViewCellReuse,
+                                                       for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
+        let group = myGroups[indexPath.row]
+        cell.configure(image: UIImage(named: group.avatar),
+                       name: group.name,
+                       description: group.description)
+        cell.configure(self.myGroups[indexPath.row])
+        
+        return cell
+    }
     
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myGroups.count
+    }
 }

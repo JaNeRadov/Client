@@ -34,7 +34,7 @@ extension PhotoCollectionViewCell: LikeControlProtocol {
     func pressedLike(likeState: Bool, counter: Int) {
         self.onLikeClosure?(likeState, counter)
     }
-//
-//
-//
-//}
+
+
+
+}

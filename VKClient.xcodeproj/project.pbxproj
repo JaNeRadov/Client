@@ -30,6 +30,7 @@
 		3FD8DEE02870CCD500D03EC2 /* LikeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEDF2870CCD500D03EC2 /* LikeControlView.swift */; };
 		3FD8DEE22870D0A100D03EC2 /* AllGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */; };
 		3FD8DEE42870D45000D03EC2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8DEE32870D45000D03EC2 /* Media.xcassets */; };
+		3FD8DEE62870DD6900D03EC2 /* MyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8DEE52870DD6900D03EC2 /* MyGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3FD8DEDF2870CCD500D03EC2 /* LikeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControlView.swift; sourceTree = "<group>"; };
 		3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupViewController.swift; sourceTree = "<group>"; };
 		3FD8DEE32870D45000D03EC2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		3FD8DEE52870DD6900D03EC2 /* MyGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 		3FD8DE8D286B391C00D03EC2 /* VKClient */ = {
 			isa = PBXGroup;
 			children = (
-				3FD8DEAC286B913F00D03EC2 /* Cell */,
 				3FD8DEAB286B912300D03EC2 /* Model */,
 				3FD8DEAA286B911100D03EC2 /* Controllers */,
 				3FD8DE90286B391C00D03EC2 /* SceneDelegate.swift */,
@@ -111,6 +112,7 @@
 				3FD8DEB7286CCAFA00D03EC2 /* ProfileViewController.swift */,
 				3FD8DEB9286CCBE600D03EC2 /* MyFreandsViewController.swift */,
 				3FD8DEE12870D0A100D03EC2 /* AllGroupViewController.swift */,
+				3FD8DEE52870DD6900D03EC2 /* MyGroupViewController.swift */,
 				3FD8DED6286CDC3700D03EC2 /* GaleryViewController.swift */,
 			);
 			path = Controllers;
@@ -124,6 +126,7 @@
 				3FD8DEC5286CCEA100D03EC2 /* Group.swift */,
 				3FD8DECC286CD47E00D03EC2 /* Storage.swift */,
 				3FD8DEDA2870CC3500D03EC2 /* myPhoto.swift */,
+				3FD8DEAC286B913F00D03EC2 /* Cell */,
 				3FD8DEDC2870CC8200D03EC2 /* Custom View */,
 			);
 			path = Model;
@@ -244,6 +247,7 @@
 				3FD8DEBA286CCBE600D03EC2 /* MyFreandsViewController.swift in Sources */,
 				3FD8DEB6286CCA5B00D03EC2 /* ViewController+dataSource.swift in Sources */,
 				3FD8DEB3286B92FA00D03EC2 /* Profile.swift in Sources */,
+				3FD8DEE62870DD6900D03EC2 /* MyGroupViewController.swift in Sources */,
 				3FD8DEDB2870CC3500D03EC2 /* myPhoto.swift in Sources */,
 				3FD8DED7286CDC3700D03EC2 /* GaleryViewController.swift in Sources */,
 				3FD8DE8F286B391C00D03EC2 /* AppDelegate.swift in Sources */,

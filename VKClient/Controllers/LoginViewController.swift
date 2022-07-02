@@ -23,7 +23,8 @@ class LoginViewController: UIViewController {
     
     func filldata() -> [Friend] {
         
-        let friendOne = Friend(name: "Jane", age: "25", avatar: "Iam", photoAlbom: ["Iam"])
+        let myPhoto = MyPhoto(url: "Iam")
+        let friendOne = Friend(name: "Jane", age: "25", avatar: "Iam", photoAlbom: [myPhoto])
         
         
         var friendsArray = [Friend]()
