@@ -22,7 +22,7 @@ class GaleryViewController: UIViewController {
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: photoCollectionViewCellReuseIdentifire)
         collectionView.dataSource = self
         collectionView.delegate = self
-        photoAlbom = Storage.shared.friends[photoAlbomIndex].photoAlbom
+//        photoAlbom = Storage.shared.friends[photoAlbomIndex].photoAlbom
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

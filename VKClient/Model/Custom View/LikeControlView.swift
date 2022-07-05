@@ -1,23 +1,24 @@
 //
 //  LikeControlView.swift
-//  VKClient
+//  AltVK
 //
-//  Created by Jane Z. on 02.07.2022.
+//  Created by Jane Z. on 09.06.2022.
 //
 
 import UIKit
 
 protocol LikeControlProtocol: AnyObject {
-    func pressedLike(likeState: Bool, counter: Int)
+    func pressLike(likeState: Bool, counter: Int)
 }
+
 
 @IBDesignable class LikeControlView: UIView {
 
-  
-    @IBOutlet weak var counterLable: UILabel!
+
+    @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var heartImageView: UIImageView!
     
-    weak var deligate: LikeControlProtocol?
+    weak var delegate: LikeControlProtocol?
     var counter = 0
     var isPressed = false
     
@@ -31,7 +32,7 @@ protocol LikeControlProtocol: AnyObject {
         setup()
     }
     
-    private func loadFromXib() -> UIView {
+    private func loadFomXib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let xib = UINib(nibName: "LikeControlView", bundle: bundle)
         let xibView = xib.instantiate(withOwner: self).first as! UIView
@@ -39,28 +40,28 @@ protocol LikeControlProtocol: AnyObject {
     }
     
     private func setup() {
-        let xibView = loadFromXib()
+        let xibView = loadFomXib()
         xibView.frame = self.bounds
         xibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(xibView)
-        counterLable.text = String(counter)
+        counterLabel.text = String(counter)
     }
     
     func configure(isLiked: Bool, counter: Int) {
         self.counter = counter
         isPressed = isLiked
+        
     }
-    
     func likeState() {
         if isPressed {
             heartImageView.image = UIImage(systemName: "heart.fill")
         } else {
             heartImageView.image = UIImage(systemName: "heart")
         }
-        counterLable.text = String(counter)
+        counterLabel.text = String(counter)
     }
     
-    @IBAction func pressLikeButton(_ sender: Any) {
+    @IBAction func pressLikeButton(_ sender: UIButton) {
         isPressed = !isPressed
         if isPressed {
             counter += 1
@@ -68,7 +69,8 @@ protocol LikeControlProtocol: AnyObject {
             counter -= 1
         }
         likeState()
-        deligate?.pressedLike(likeState: isPressed, counter: counter)
+        delegate?.pressLike(likeState: isPressed, counter: counter)
     }
+    
     
 }
