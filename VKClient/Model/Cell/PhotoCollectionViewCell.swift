@@ -24,17 +24,16 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         photoImageView.image = image
         photoImageView.layer.cornerRadius = 50
         likeControllView.configure(isLiked: isliked, counter: likeCounter)
-        likeControllView.deligate = self
+        likeControllView.delegate = self
         self.onLikeClosure = onLikeClosure
     }
    
 }
  
 extension PhotoCollectionViewCell: LikeControlProtocol {
-    func pressedLike(likeState: Bool, counter: Int) {
+    func pressLike(likeState: Bool, counter: Int) {
         self.onLikeClosure?(likeState, counter)
     }
-
 
 
 }

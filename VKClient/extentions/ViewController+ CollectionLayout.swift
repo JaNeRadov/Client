@@ -16,3 +16,15 @@ extension GaleryViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: cellWidth, height: cellWidth + 20)
     }
 }
+
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout colletctionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width
+        let witeSpase: CGFloat  = 20
+        let cellWidth = width / 3 - witeSpase
+        
+        return CGSize(width: cellWidth, height: cellWidth + 20)
+
+
+    }
+}

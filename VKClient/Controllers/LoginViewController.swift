@@ -34,6 +34,14 @@ class LoginViewController: UIViewController {
         return friendsArray
     }
     
+//    func profileData() -> [Profile] {
+////        let myProfile = Profile(name: "Jane", secondName: <#T##String#>, avatar: <#T##String?#>, photoAlbom: <#T##[MyPhoto]#>)
+////
+////        var profileArray = [Profile]()
+////        profileArray.append(myProfile)
+////        
+////        return profileArray
+//    }
     
     
     override func viewDidLoad() {
